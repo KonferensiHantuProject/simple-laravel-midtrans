@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\{HomeController, TransactionController, OrderController};
+use App\Http\Controllers\Webhook\MidtransWebhookController;
 
 /*
 |--------------------------------------------------------------------------
@@ -27,3 +28,6 @@ Route::prefix('/order')->group(function () {
 Route::prefix('/transaction')->group(function () {
     Route::get('/', [TransactionController::class, 'index']);
 });
+
+// Webhook
+Route::post('/webhook', [MidtransWebhookController::class, 'index']);
