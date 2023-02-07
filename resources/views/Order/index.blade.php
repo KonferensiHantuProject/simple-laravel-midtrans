@@ -21,7 +21,7 @@
     {{-- Radio Button --}}
     <div class="mb-5">
         <label for="extra" class="form-label">Extra</label>
-        <div class="form-check">
+        {{-- <div class="form-check">
             <input class="form-check-input" type="radio" name="extra" id="extra_1" value="50000">
             <label class="form-check-label" for="extra_1">
               Extra Sayur
@@ -29,6 +29,18 @@
           </div>
           <div class="form-check">
             <input class="form-check-input" type="radio" name="extra" id="extra_2" value="20000">
+            <label class="form-check-label" for="extra_2">
+              Extra Daging
+            </label>
+        </div> --}}
+        <div class="form-check">
+            <input class="form-check-input" type="checkbox" name="extra[]" id="extra_1" value="50000">
+            <label class="form-check-label" for="extra_1">
+              Extra Sayur
+            </label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" name="extra[]" id="extra_2" value="20000">
             <label class="form-check-label" for="extra_2">
               Extra Daging
             </label>

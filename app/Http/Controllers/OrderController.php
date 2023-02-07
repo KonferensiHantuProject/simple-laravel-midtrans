@@ -24,10 +24,13 @@ class OrderController extends Controller
         DB::beginTransaction();
         try{
 
+            // Sum Array
+            $extra = array_sum($request->input('extra'));
+
             $data_order = [
                 'name' => $request->input('name'),
                 'food' => $request->input('food'),
-                'extra_fee' => $request->input('extra'),
+                'extra_fee' => $extra,
             ];
    
             //Create Order
