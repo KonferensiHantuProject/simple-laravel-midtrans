@@ -2,10 +2,8 @@
 
 namespace App\Helpers;
 
-use App\Interfaces\V1\Xendit\XenditInterface;
 use GuzzleHttp\Client;
 use GuzzleHttp\Exception\RequestException;
-use App\Traits\BugsnagTrait;
 use Throwable;
 
 class MidtransHelper

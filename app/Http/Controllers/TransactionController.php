@@ -12,7 +12,7 @@ class TransactionController extends Controller
         $transactions = Transaction::get();
 
         $data = [
-            'title' => 'Home',
+            'title' => 'Transaction List',
             'transactions' => $transactions
         ];
 
